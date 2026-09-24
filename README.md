@@ -48,6 +48,12 @@ The collected audio recordings are first passed through an in-house ASR [Kaldi T
 
 The completed transcriptions are further quality-checked by an expert who is comfortable with both spoken Hindi and Devanagari orthography and is aware of the labelling conventions. These non-speech labels are retained in the raw transcription files but are removed during the preprocessing step. Before phone-level scoring, only the actual word tokens are passed to the lexicon for phone sequence generation.
 
+## Sample example with different miscue labels
+
+<img width="556" height="216" alt="Screenshot 2026-09-24 at 2 52 45 PM" src="https://github.com/user-attachments/assets/e05a7920-42a3-43e0-aa58-29ee949186ff" />
+
+The above figure shows an example containing the different miscue types using a Hindi sentence. The prompt text (top) is aligned with the text decoded by the ASR (bottom) to obtain the miscues - **substitution** (दादी → दीदी), **deletion** (रोज़ omitted), and **insertion** (भी added). The other words are correctly uttered.
+
 ## Contents of the repository
 - `references` folder contains the M.S. Thesis of Raj Gothi et. al. referred to in the paper.
 

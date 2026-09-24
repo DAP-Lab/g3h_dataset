@@ -54,6 +54,57 @@ The completed transcriptions are further quality-checked by an expert who is com
 
 The above figure shows an example containing the different miscue types using a Hindi sentence. The prompt text (top) is aligned with the text decoded by the ASR (bottom) to obtain the miscues - **substitution** (दादी → दीदी), **deletion** (रोज़ omitted), and **insertion** (भी added). The other words are correctly uttered.
 
+## Phone Set details
+| Phone | Devanagari Symbol   | Hindi Example Word | English Example Word |
+| --- | --- | --- | --- |
+| aa	| अ	 | कमल	| **u**p |
+| AA	| आ / ा	 | आम	| f**a**ther |
+| ii	| इ / ि	 | दिन	| s**i**t |
+| II	| ई / ी | दीन	| s**ee**	|
+| uu	| उ / ु | तुम	| p**u**t |
+| UU	| ऊ / ू	| दूध	| moon |
+| ee	| ए / ऐ / े / ै / ॆ | एक	| b**a**ke |
+| ae	| ऍ / ॲ / ॅ	| बॅट (loanword)	| c**a**t |
+| oo	| ओ / ो / ऒ / ॊ | सोना | g**o** |
+| OO	| औ / ौ / ऑ / ॉ / ॏ / ॕ | कौन | c**au**ght |
+| --- | --- | --- | --- |
+| k | क / क़ | कमल | **k**ettle |
+| kh | ख / ख़ | खाना | - |
+| g | ग / ग़ | गाँव | **g**o |
+| gh | घ | घर | - |
+| c | च | चलो | **ch**ange |
+| ch | छ | छत | - |
+| j | ज | जल | **j**ug |
+| jh | झ | झूठ | - |
+| T | ट | टमाटर | **t**op |
+| Th | ठ | ठंडा | - |
+| D | ड / ड़ | लड़का | **d**og |
+| Dh | ढ / ढ़ | ढाल | - |
+| N | ण | वर्ण | - |
+| t | त | तब | - |
+| th | थ | थाली | **Th**orium |
+| d | द | दिन | **th**ey |
+| dh | ध | धन | - |
+| n | न / ऩ | नया | **n**umber |
+| p | प | पानी | **p**arrot |
+| ph | फ | फल | **f**ull |
+| b | ब | बच्चा | **b**at |
+| bh | भ | भारत | - |
+| m | म | माँ | **m**ango |
+| q | ं / ँ | माँ | - |
+| H | ः | दुःख | - |
+| z | ज़ | ज़मीन | **z**oo |
+| f | फ़ | फ़सल | - |
+| y | य / य़ | यह | **y**ak |
+| r | र / ऱ | राम | **r**ight |
+| l | ल / ळ | लड़का | **l**ight |
+| w | व | वन | **w**ear |
+| sh | श / ष | शहर | **sh**are |
+| s | स | सत्य | **s**ea |
+| hh | ह | हाथ | **h**ead |
+
+ 
+
 ## Contents of the repository
 - `references` folder contains the M.S. Thesis of Raj Gothi et. al. referred to in the paper.
 

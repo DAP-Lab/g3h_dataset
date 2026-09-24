@@ -54,7 +54,10 @@ The completed transcriptions are further quality-checked by an expert who is com
 
 The above figure shows an example containing the different miscue types using a Hindi sentence. The prompt text (top) is aligned with the text decoded by the ASR (bottom) to obtain the miscues - **substitution** (दादी → दीदी), **deletion** (रोज़ omitted), and **insertion** (भी added). The other words are correctly uttered.
 
-## Phone Set details
+## Vocabulary Token details
+
+The table below contains the details of the phone set that we have considered along with word examples.
+
 | Phone | Devanagari Symbol   | Hindi Example Word | English Example Word |
 | --- | --- | --- | --- |
 | aa	| अ	 | कमल	| **u**p |
@@ -67,6 +70,10 @@ The above figure shows an example containing the different miscue types using a 
 | ae	| ऍ / ॲ / ॅ	| बॅट (loanword)	| c**a**t |
 | oo	| ओ / ो / ऒ / ॊ | सोना | g**o** |
 | OO	| औ / ौ / ऑ / ॉ / ॏ / ॕ | कौन | c**au**ght |
+| aw	| - | - | c**ow** |
+| ay	| - | - | m**y** |
+| ex	| - | - | b**e**d |
+| oy	| - | - | b**oy** |
 | --- | --- | --- | --- |
 | k | क / क़ | कमल | **k**ettle |
 | kh | ख / ख़ | खाना | - |
@@ -102,7 +109,22 @@ The above figure shows an example containing the different miscue types using a 
 | sh | श / ष | शहर | **sh**are |
 | s | स | सत्य | **s**ea |
 | hh | ह | हाथ | **h**ead |
+| jz	| - | - | ja**zz** |
+| ng	| - | - | si**ng** |
+| v	| - | - | **v**ase |
+| zh	| - | - | vi**s**ion |
 
+Each of the above 52 phones is a token in the output vocabulary. In addition to these, we use an additional 5 special tokens (Total: 57) which are given below.
+
+| Token | Description |
+| --- | --- |
+| * | Word boundary token |
+| SIL | Silence segment |
+| (space) | Phone-boundary marker |
+| [UNK] | Unknown token |
+| [PAD] | Padding token |
+
+	
  
 
 ## Contents of the repository

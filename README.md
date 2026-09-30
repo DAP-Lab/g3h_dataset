@@ -48,22 +48,25 @@ The collected audio recordings are first passed through an in-house ASR [Kaldi T
 
 The completed transcriptions are further quality-checked by an expert who is comfortable with both spoken Hindi and Devanagari orthography and is aware of the labelling conventions. These non-speech labels are retained in the raw transcription files but are removed during the preprocessing step. Before phone-level scoring, only the actual word tokens are passed to the lexicon for phone sequence generation.
 
-## Sample example with different miscue labels
+## Ground-truth miscue labels
+For the reading assessment task, the Ground-truth miscue labels (Correct/Substitution/Deletion/Insertion) are derived by comparing the manual transcription with suitably aligned text prompts using a phonetically oriented alignment. The figure below shows an example of this alignment containing the different miscue types using a Hindi sentence. The prompt text (top) is aligned with the ground-truth text to obtain the miscues - **substitution** (दादी → दीदी), **deletion** (रोज़ omitted), and **insertion** (भी added). The other words are correctly uttered.
 
-<img width="556" height="216" alt="Screenshot 2026-09-24 at 2 52 45 PM" src="https://github.com/user-attachments/assets/e05a7920-42a3-43e0-aa58-29ee949186ff" />
+<img width="556" height="221" alt="image" src="https://github.com/user-attachments/assets/08b31d32-4a65-4c6a-8862-57ee0a491cd9" />
 
-The above figure shows an example containing the different miscue types using a Hindi sentence. The prompt text (top) is aligned with the text decoded by the ASR (bottom) to obtain the miscues - **substitution** (दादी → दीदी), **deletion** (रोज़ omitted), and **insertion** (भी added). The other words are correctly uttered.
+
+
+
 
 ## Vocabulary Token details
 
-The table below contains the details of the phone set that we have considered along with word examples.
+The table below contains the details of the Indian language universal phone set that we have considered along with word examples.
 
 | Phone | Devanagari Symbol   | Hindi Example Word | English Example Word |
 | --- | --- | --- | --- |
-| aa	| अ	 | कमल	| **u**p |
+| aa	| अ	 | अनार	| **u**p |
 | AA	| आ / ा	 | आम	| f**a**ther |
 | ii	| इ / ि	 | दिन	| s**i**t |
-| II	| ई / ी | दीन	| s**ee**	|
+| II	| ई / ी | गीत	| s**ee**	|
 | uu	| उ / ु | तुम	| p**u**t |
 | UU	| ऊ / ू	| दूध	| moon |
 | ee	| ए / ऐ / े / ै / ॆ | एक	| b**a**ke |
@@ -85,9 +88,9 @@ The table below contains the details of the phone set that we have considered al
 | jh | झ | झूठ | - |
 | T | ट | टमाटर | **t**op |
 | Th | ठ | ठंडा | - |
-| D | ड / ड़ | लड़का | **d**og |
+| D | ड / ड़ | डमरू/लड़का | **d**og |
 | Dh | ढ / ढ़ | ढाल | - |
-| N | ण | वर्ण | - |
+| N | ण | बाण | - |
 | t | त | तब | - |
 | th | थ | थाली | **Th**orium |
 | d | द | दिन | **th**ey |

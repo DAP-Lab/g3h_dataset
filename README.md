@@ -59,7 +59,7 @@ For the reading assessment task, the Ground-truth miscue labels (Correct/Substit
 
 ## Vocabulary Token details
 
-The table below contains the details of the Indian language universal phone set that we have considered along with word examples.
+The table below contains the details of the Indian language universal phone set that we have considered, along with word examples.
 
 | Phone | Devanagari Symbol   | Hindi Example Word | English Example Word |
 | --- | --- | --- | --- |
@@ -130,7 +130,7 @@ Each of the above 52 phones is a token in the output vocabulary. In addition to 
 	
  
 
-## Contents of the repository
+<!-- ## Contents of the repository
 - `references` folder contains the M.S. Thesis of Raj Gothi et. al. referred to in the paper.
 
-For further details, check out the following link: [Supplementary material](https://app.notion.com/p/Supplementary-material-Interspeech-submission-38eda16c0a0080ed941ad4fd55f68b98)
+For further details, check out the following link: [Supplementary material](https://app.notion.com/p/Supplementary-material-Interspeech-submission-38eda16c0a0080ed941ad4fd55f68b98) -->

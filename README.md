@@ -8,7 +8,7 @@ The dataset contains audio recordings and text transcripts of 1908 utterances of
 Ethics clearance was obtained for the audio recording with anonymised speaker information. The students, who come with diverse home languages, are introduced to both Hindi and English reading and writing in Grade 1.
 
 ## Text Prompts
-The grade-appropriate text passages were chosen by a working group of teachers from the government school network from Open Content sources such as [Panchatantra](https://en.wikipedia.org/wiki/Panchatantra) and [Story Weaver](https://storyweaver.org.in/en). The 3 passages chosen for Grade 3 are given below. Note that each story has been split up into 2 paragraphs of 50-70 words each.
+The grade-appropriate text passages were chosen by a working group of teachers from the government school network from Open Content sources such as [Panchatantra](https://en.wikipedia.org/wiki/Panchatantra) and [Story Weaver](https://storyweaver.org.in/en). The 3 passages chosen for Grade 3 are given below. Note that each story has been split up into 2 paragraphs of 50-70 words each. Each paragraph serves as the text prompt for one utterance in our dataset. So while most children recorded both paragraphs of any one story, there were a few who recorded only one of the two paragraphs. 
 
 ### Story 1: **जूता** (ID: HI-G3H-001, 138 words)
 
@@ -46,7 +46,7 @@ The collected audio recordings are first passed through an in-house ASR [Kaldi T
 | WH  | Child whispering a word (many a times this can be heard when the child is trying to spell out the word)  |
 | HS  | Hesitation while uttering a word. It is used as a suffix for words where the child hesitated while reading.  |
 
-The completed transcriptions are further quality-checked by an expert who is comfortable with both spoken Hindi and Devanagari orthography and is aware of the labelling conventions. These non-speech labels are retained in the raw transcription files but are removed during the preprocessing step. Before phone-level scoring, only the actual word tokens are passed to the lexicon for phone sequence generation.
+The completed transcriptions are further quality-checked by an expert who is comfortable with both spoken Hindi and Devanagari orthography and is aware of the labelling conventions. These non-speech labels are retained in the raw transcription files but are removed during the preprocessing steps for the automatic system development. Before phone-level scoring, only the actual word tokens are passed to the lexicon for phone sequence generation.
 
 ## Ground-truth miscue labels
 For the reading assessment task, the Ground-truth miscue labels (Correct/Substitution/Deletion/Insertion) are derived by comparing the manual transcription with suitably aligned text prompts using a phonetically oriented alignment. The figure below shows an example of this alignment containing the different miscue types using a Hindi sentence. The prompt text (top) is aligned with the ground-truth text to obtain the miscues - **substitution** (दादी → दीदी), **deletion** (रोज़ omitted), and **insertion** (भी added). The other words are correctly uttered.

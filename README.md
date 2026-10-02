@@ -1,9 +1,9 @@
 # Grade 3 Hindi (G3H) Dataset
 
-This dataset will be released as part of the ICASSP 2027 research paper titled "Hindi Oral Reading Miscue Detection with Semi-supervised Fine-tuning". 
+The dataset described here is intended to be released with the accepted paper (now under review for ICASSP 2027) titled "Hindi Oral Reading Miscue Detection with Semi-supervised Fine-tuning". 
 
 ## Dataset details
-The dataset contains audio recordings and text transcripts of 1908 utterances of read aloud text across 1036 unique speakers. These audios were collected as part of a benchmarking exercise in December 2023 for testing reading levels in Grades 3 students across a government school network predominantly from the North Indian Hindi speaking states on Hindi level-appropriate texts. The [text prompts](#text-prompts) which comprise of 3 stories of 2 paragraphs each have also been provided. The total audio duration of the dataset is 21.3 hours with speakers uniformly distributed across the three stories. The dataset is fully labeled with filler/non-speech events and word-level transcriptions using a [semi-automated transcription process](#manual-transcription-process).
+The dataset contains audio recordings and text transcripts of 1908 utterances of read aloud text across 1036 unique speakers. These audios were collected as part of a benchmarking exercise in December 2023 for testing reading levels in Grades 3 students across a government school network predominantly from the North Indian Hindi speaking states on Hindi level-appropriate texts. The [text prompts](#text-prompts) which comprise of 3 stories of 2 paragraphs each have also been provided. The total audio duration of the dataset is 21.3 hours with speakers uniformly distributed across the three stories. The dataset is fully labeled with filler/non-speech events and word-level transcriptions using a [semi-automated transcription process](#manual-transcription-process). Additionally, word miscue labels are provided for each utterance.
 
 Ethics clearance was obtained for the audio recording with anonymised speaker information. The students, who come with diverse home languages, are introduced to both Hindi and English reading and writing in Grade 1.
 
